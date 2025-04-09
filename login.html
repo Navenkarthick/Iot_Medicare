@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Hospital Logo" class="logo">
+            <h2>Welcome to Hospital Portal</h2>
+            
+            <div class="input-group">
+                <input type="text" id="email" class="input-field" placeholder="Enter your email">
+            </div>
+            
+            <div class="input-group">
+                <input type="password" id="password" class="input-field" placeholder="Enter your password">
+            </div>
+            
+            <button class="login-btn">Login</button>
+            
+            <p class="divider">OR</p>
+            
+            <div class="google-login">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Logo">
+                <span>Sign in with Google</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+    <!-- Firebase Config & Login Script -->
+    <script src="firebase-config.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
