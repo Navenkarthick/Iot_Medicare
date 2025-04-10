@@ -23,7 +23,6 @@ A **real-time health monitoring** system that displays **heart rate and oxygen l
 ### **Live Dashboard UI**  
 ![Live Demo](Login-Demo.gif)
 
----
 
 ## **🚀 Setup & Installation**  
 
@@ -45,6 +44,7 @@ npm install
 
 ### **4️⃣ Start the Web App**  
 Open `index.html` in your browser 🚀  
+
 
 
 ## **📜 License**  
