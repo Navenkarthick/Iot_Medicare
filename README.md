@@ -21,7 +21,7 @@ A **real-time health monitoring** system that displays **heart rate and oxygen l
 
 ## **📷 Project Preview**  
 ### **Live Dashboard UI**  
-![Live Demo](Login-Demo.gif)
+![Live Demo](Login.gif)
 
 
 ## **🚀 Setup & Installation**  
