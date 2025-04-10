@@ -21,9 +21,8 @@ A **real-time health monitoring** system that displays **heart rate and oxygen l
 
 ## **📷 Project Preview**  
 ### **Live Dashboard UI**  
-![Dashboard Preview](https://your-image-link-here.com)  
+![Live Demo](Login-Demo.gif)
 
----
 
 ## **🚀 Setup & Installation**  
 
@@ -46,7 +45,7 @@ npm install
 ### **4️⃣ Start the Web App**  
 Open `index.html` in your browser 🚀  
 
----
+
 
 ## **📜 License**  
 This project is **open-source** under the [MIT License](LICENSE).  
@@ -57,5 +56,3 @@ This project is **open-source** under the [MIT License](LICENSE).
 📧 Email: your-email@example.com  
 🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)  
 🚀 GitHub: [your-username](https://github.com/your-username)  
-
----
