@@ -53,6 +53,5 @@ This project is **open-source** under the [MIT License](LICENSE).
 ---
 
 ## **📞 Contact**  
-📧 Email: your-email@example.com  
-🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)  
-🚀 GitHub: [your-username](https://github.com/your-username)  
+📧 Email: navenkarthickm@gmail.com
+🚀 GitHub: [Navenkarthick](https://github.com/Navenkarthick)  
