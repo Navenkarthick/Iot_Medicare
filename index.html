@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare Live - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+<body> 
+
+    <div class="sidebar">
+        <h2>🩺 MediCare Live</h2>
+        <ul>
+            <li><a href="index.html" class="active">📊 Dashboard</a></li>
+            <li><a href="appointments.html">📅 Appointments</a></li>
+            <li><a href="phonebook.html">📖 Phonebook</a></li>
+            <li class="push-bottom"><a href="queries.html">❓ Queries</a></li>
+            <li><a href="#" onclick="logout()">🚪 Logout</a></li>
+        </ul>
+    </div>
+    
+    <div class="main-content">
+        <h1 class="dashboard-title">🏥 Live Patient Monitoring</h1>
+
+<!-- Live Data Cards -->
+<div class="monitor-container">
+    <!-- Bed 1 -->
+    <div class="monitor-card">
+        <h2>🛏️ Bed 1</h2>
+        <div class="monitor-data">
+            <p><i class="fas fa-heartbeat"></i> Heart Rate: <span id="bed1-heartRate">--</span></p>
+            <p><i class="fas fa-lungs"></i> Oxygen Level: <span id="bed1-oxygen">--</span></p>
+        </div>
+    </div>
+
+    <!-- Bed 2 -->
+    <div class="monitor-card">
+        <h2>🛏️ Bed 2</h2>
+        <div class="monitor-data">
+            <p><i class="fas fa-heartbeat"></i> Heart Rate: <span id="bed2-heartRate">--</span></p>
+            <p><i class="fas fa-lungs"></i> Oxygen Level: <span id="bed2-oxygen">--</span></p>
+        </div>
+    </div>
+</div>
+    <h1 class="dashboard-title">🏥 Real-Time Patient Monitoring</h1>
+
+<!-- Chart Section -->
+<div class="chart-container">
+    <!-- Bed 1 Chart -->
+    <div class="chart-box">
+        <h2>🛏️ Bed 1</h2>
+        <canvas id="bed1Chart"></canvas>
+    </div>
+
+    <!-- Bed 2 Chart -->
+    <div class="chart-box">
+        <h2>🛏️ Bed 2</h2>
+        <canvas id="bed2Chart"></canvas>
+    </div>
+</div>
+ 
+
+    </div>
+
+</body>
+</html>

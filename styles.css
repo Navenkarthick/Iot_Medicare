@@ -1,0 +1,165 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.sidebar {
+    width: 250px;
+    background: #4a47a3;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a.active, .sidebar ul li a:hover {
+    background: #6a67ce;
+}
+
+.sidebar ul .push-bottom {
+    margin-top: bottom; /* Pushes this item to the bottom */
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+}
+
+.bed-card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#chart-container {
+    width: 100%;
+    max-width: 600px; /* Limit width */
+    height: 300px; /* Adjust height */
+    margin: auto; /* Center the chart */
+}
+
+/* Bed Section */
+.bed-box {
+    width: 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Chart Layout */
+.chart-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Chart Boxes */
+.chart-box {
+    width: 45%;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Chart Hover Effect */
+.chart-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Make Charts Responsive */
+canvas {
+    width: 100% !important;
+    height: 280px !important;
+}
+
+/* Dashboard Title */
+.dashboard-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+/* Container for Monitoring Cards */
+.monitor-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual Monitoring Card */
+.monitor-card {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    font-size: 18px;
+}
+
+/* Hover Effect */
+.monitor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Monitoring Data Styling */
+.monitor-data p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    margin: 10px 0;
+}
+
+/* Icons Styling */
+.monitor-data i {
+    margin-right: 8px;
+    color: red;
+}
+
+/* Responsive: Mobile View */
+@media (max-width: 600px) {
+    .monitor-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

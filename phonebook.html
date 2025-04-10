@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare Live - Phonebook</title>
+    <link rel="stylesheet" href="phonebook.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>🩺 MediCare Live</h2>
+        <ul>
+            <li><a href="index.html">📊 Dashboard</a></li>
+            <li><a href="appointments.html">📅 Appointments</a></li>
+            <li><a href="phonebook.html" class="active">📖 Phonebook</a></li>
+            <li><a href="queries.html">❓ Queries</a></li>
+            <li><a href="#" onclick="logout()">🚪 Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- ✅ Main Content -->
+    <div class="main-content">
+        <h2>Doctor Phone Book</h2>
+        <div class="doctor-list" id="doctorList"></div>
+    </div>
+
+    <script src="phonebook.js"></script>
+
+    </body>
+</html>

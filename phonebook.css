@@ -1,0 +1,131 @@
+/* ✅ General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background: #4a47a3;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a.active, .sidebar ul li a:hover {
+    background: #6a67ce;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* ✅ Doctor List */
+.doctor-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 25px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* ✅ Doctor Card */
+.doctor-card {
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    max-height: 120px; /* Default height */
+    overflow: hidden;
+    position: relative;
+}
+
+/* ✅ Hover Effect */
+.doctor-card:hover {
+    max-height: 200px; /* Expands to reveal contact info */
+    transform: scale(1.03);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ Top Section (Aligned Layout) */
+.doctor-card .top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+/* ✅ Doctor Image */
+.doctor-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    margin-right: 15px;
+}
+
+/* ✅ Name (Center Aligned) */
+.name {
+    flex-grow: 2;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+/* ✅ Profession (Right Aligned) */
+.profession {
+    font-size: 14px;
+    color: #666;
+    text-align: right;
+    flex-grow: 1;
+}
+
+/* ✅ Contact Info (Hidden Initially) */
+.contact-info {
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.3s, max-height 0.3s;
+    text-align: center;
+    width: 100%;
+    padding-top: 12px;
+    font-size: 14px;
+    color: #444;
+}
+
+/* ✅ Show Contact Info on Hover */
+.doctor-card:hover .contact-info {
+    opacity: 1;
+    max-height: 80px;
+}
